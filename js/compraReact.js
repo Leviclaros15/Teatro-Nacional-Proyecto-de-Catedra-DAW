@@ -136,7 +136,7 @@ const FormularioCompra = () => {
                 <div className="detalle" style={{border: 'none'}}>
                     <p style={{ color: '#d6c98a', lineHeight: '1.5', margin: '10px 0' }}>
                         ¡Felicidades, **{confirmation.nombre}**!
-                        <br/>Tu boleto para la función **"{confirmation.eventoTitulo}"** ha sido **enviado a {confirmation.email} (Simulado)**.
+                        <br/>Tu boleto para la función **"{confirmation.eventoTitulo}"** ha sido **enviado a {confirmation.email}**.
                     </p>
                 </div>
                 
@@ -244,7 +244,7 @@ const FormularioCompra = () => {
             
             <div className="acciones">
                 <button type="submit" disabled={isLoading} style={{ opacity: isLoading ? 0.7 : 1 }}>
-                    {isLoading ? 'Simulando Compra y Envío...' : 'Comprar Boleto y Enviar Correo (Simulado)'}
+                    {isLoading ? 'Simulando Compra y Envío...' : 'Comprar Boleto y Enviar Correo     '}
                 </button>
             </div>
         </form>
@@ -256,4 +256,5 @@ const FormularioCompra = () => {
 const container = document.getElementById('react-compra-root'); 
 // El ID 'react-compra-root' debe coincidir con el div en tu HTML
 const root = ReactDOM.createRoot(container);
+
 root.render(<FormularioCompra />);
