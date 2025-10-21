@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #181818 0%, #232526 100%);
+    color: #f5f5f5;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #1a1a1a 60%, #bfa14a 100%);
+    padding: 32px 0 24px 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: 1s;
+}
+
+header:hover{
+    padding-bottom: 40px;
+    transition: 1s;
+}
+
+h1 {
+    color: #bfa14a;
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #000a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #bfa14a;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background: #bfa14a;
+    color: #181818;
+    box-shadow: 0 2px 12px #bfa14a55;
+}
+
+.titulo {
+    text-align: center;
+    color: #bfa14a;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 40px 5vw;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    background: rgba(30,30,30,0.7);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px #0005;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px #bfa14a33;
+    transition: transform 0.35s cubic-bezier(.4,2,.6,.9), box-shadow 0.3s;
+    border: 2px solid #bfa14a33;
+}
+
+.gallery img:hover {
+    transform: scale(1.07) rotate(-1deg);
+    box-shadow: 0 8px 32px #bfa14a77;
+    border-color: #bfa14a;
+}
+
+form {
+    background: linear-gradient(120deg, #232526 60%, #bfa14a22 100%);
+    padding: 32px 28px;
+    max-width: 420px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0007;
+    border: 1.5px solid #bfa14a55;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    font-weight: 600;
+    color: #bfa14a;
+    letter-spacing: 1px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0 0 0;
+    border: 1.5px solid #bfa14a55;
+    border-radius: 7px;
+    background: #232526;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border: 1.5px solid #bfa14a;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(90deg, #bfa14a 60%, #fffbe6 100%);
+    color: #181818;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    margin-top: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px #bfa14a33;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.programadores_h1{
+    margin: 40px;
+    text-align: center;
+}
+
+.Teatro{
+    margin-bottom:  20px;
+    text-decoration: none;
+    font-style: unset;
+}
+
+.tituloo{
+    text-align: center;
+    margin: 30px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #fffbe6 60%, #bfa14a 100%);
+    color: #bfa14a;
+    box-shadow: 0 4px 18px #bfa14a77;
+}
+
+footer {
+    background: #181818;
+    color: #bfa14a;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-top: 2px solid #bfa14a33;
+    box-shadow: 0 -2px 12px #0005;
+}
+footer a{
+    color: aqua;
+}
+
+.acercade {
+    text-align: center;
+    max-width: 900px;
+    font-size: 1.25rem;
+    margin: 40px auto;
+    background: rgba(30,30,30,0.7);
+    border-radius: 14px;
+    padding: 32px 24px;
+    color: #f5f5f5;
+    box-shadow: 0 4px 24px #0005;
+}
+
+.acercade h2 {
+    text-align: center;
+    color: #bfa14a;
+    font-size: 2rem;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.acercade img, .acercade video {
+    display: block;
+    margin: 24px auto;
+    width: 90%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #bfa14a33;
+    border: 2.5px solid #bfa14a;
+}
+
+#teatroimg {
+    width: 100%;
+    transition: 0.5s
+}
+#teatroimg:hover{
+filter: blur(5px);
+transition: 0.5s;
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 30px auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.evento.reverse {
+    flex-direction: row-reverse;
+}
+
+.banner img {
+    width: 430px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px #bfa14a33;
+}
+
+.funcion {
+    border: 3px solid #bfa14a;
+    padding: 24px;
+    width: 400px;
+    height: 350px;
+    background: rgba(30,30,30,0.7);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #bfa14a33;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: content-box;
+    padding-bottom: 110px;
+}
+
+.funcion:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px #bfa14a77;
+}
+
+.funcion h1 {
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #bfa14a;
+}
+
+.funcion p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #f5f5f5;
+}
+
+.programadores {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 48px 0 0 0;
+}
+
+.programador {
+    background: linear-gradient(120deg, #232526 60%, #bfa14a22 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #bfa14a33;
+    width: 220px;
+    padding: 24px 16px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1.5px solid #bfa14a55;
+}
+
+.programador:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px #bfa14a77;
+}
+
+.programador img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #bfa14a;
+    margin-bottom: 12px;
+}
+
+.programador h3 {
+    margin-top: 10px;
+    color: #bfa14a;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.programador p {
+    color: #f5f5f5;
+    font-size: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 32px 5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+#contact-form {
+    width: 48%;
+    padding-right: 45px;
+    box-sizing: content-box;
+}
+
+.map-container {
+    width: 48%;
+}
+
+#map-9cd199b9cc5410cd3b1ad21cab2e54d3 {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #bfa14a33;
+    border: 1.5px solid #bfa14a55;
+}
+.info-extra {
+    display: none;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 24px 2vw;
+    }
+    #contact-form, .map-container {
+        width: 100%;
+    }
+    .acercade img, .acercade video {
+        width: 100%;
+        max-width: 95vw;
+    }
+    .evento {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner img {
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+    }
+    .funcion {
+        width: 100%;
+        height: auto;
+    }
+    .programadores {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .programador {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    .info-extra {
+    display: none;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 18px 2vw;
+    }
+    .acercade {
+        font-size: 1rem;
+        padding: 18px 8px;
+    }
+    .programadores {
+        gap: 12px;
+    }
+    .programador {
+        width: 90vw;
+        padding: 18px 8px;
+    }
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+    .contact-container {
+        padding: 12px 2vw;
+    }
+    .info-extra {
+    display: none;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    .titulo {
+        font-size: 1rem;
+    }
+    .gallery img {
+        height: 140px;
+    }
+    .acercade {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+    .programador {
+        width: 98vw;
+    }
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+    .evento {
+        flex-direction: column;
+        gap: 20px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    button {
+        font-size: 14px;
+    }
+    .contact-container {
+        padding: 10px;
+    }
+    .info-extra {
+    display: none;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+}
+
+.info-extra {
+    display: none;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+/* Error campo nombre */
+.error-text {
+  color: #b92525;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  display: none;
+}
+.input-error {
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 4px rgba(211,47,47,0.06);
+}
+
+/* Tarjeta resumen profesional */
+.card-resumen {
+  max-width: 720px;
+  margin-top: 18px;
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(19, 35, 62, 0.06);
+  color: #0f1724;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+.card-resumen h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.15rem;
+  color: #04243a;
+}
+.card-resumen .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 18px;
+  align-items: start;
+}
+.card-resumen .info p {
+  margin: 6px 0;
+  color: #34424b;
+  font-size: 0.96rem;
+}
+.card-resumen .label {
+  color: #6b7b86;
+  font-weight: 600;
+  font-size: 0.86rem;
+}
+.card-resumen .value {
+  color: #0f1724;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* total y nota */
+.card-resumen .total {
+  grid-column: 1 / -1;
+  margin-top: 12px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #072037;
+  text-align: right;
+}
+.card-resumen .nota {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+/* Resumen con mismo estilo que el form y centrado */
+.resumen-compra,
+.resumen-card {
+  max-width: 420px;                                /* mismo ancho que el form */
+  margin: 24px auto;                               /* centrado horizontal */
+  padding: 24px;                                   /* mismo padding */
+  border-radius: 16px;                             /* mismo radio */
+  background: linear-gradient(120deg, #232526 60%, #bfa14a22 100%); /* igual que form */
+  border: 1.5px solid #bfa14a55;                   /* mismo borde */
+  box-shadow: 0 4px 24px #0007;                    /* misma sombra */
+  color: #f5f5f5;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Título */
+.resumen-compra h2,
+.resumen-card h2 {
+  color: #bfa14a;
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Detalles en líneas limpias */
+.resumen-compra .detalle,
+.resumen-card .detalle {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(191,161,74,0.06);
+  color: #e9e6d6;
+}
+.resumen-compra .detalle:last-child,
+.resumen-card .detalle:last-child {
+  border-bottom: none;
+}
+
+/* Etiqueta y valor */
+.resumen-compra .etiqueta,
+.resumen-card .etiqueta {
+  color: #d6c98a;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.resumen-compra .valor,
+.resumen-card .valor {
+  color: #fff;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Total destacado */
+.resumen-compra .total,
+.resumen-card .total {
+  margin-top: 12px;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  color: #fffbe6;
+  font-size: 1.05rem;
+  text-shadow: 0 0 8px #bfa14a;
+  border-top: 1px solid rgba(191,161,74,0.08);
+}
+
+/* Nota pequeña */
+.resumen-compra .nota,
+.resumen-card .nota {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #dcd6b8;
+}
+
+/* Responsive: ajustar ancho en móviles */
+@media (max-width: 520px) {
+  .resumen-compra, .resumen-card {
+    max-width: calc(100% - 32px);
+    margin: 18px auto;
+    padding: 18px;
+  }
+  .resumen-compra .valor, .resumen-card .valor {
+    text-align: left;
+  }
+}
+
+
+/* Asegura que Select tenga el mismo estilo oscuro que Input */
+input, textarea, select { /* <-- SE AGREGA 'select' AQUÍ */
+ width: 100%;
+ padding: 10px 12px;
+ margin: 8px 0 0 0;
+ border: 1.5px solid #bfa14a55;
+ border-radius: 7px;
+ background: #232526; /* Fondo oscuro */
+ color: #fff; /* Texto blanco */
+ font-size: 1rem;
+ font-family: inherit;
+ transition: border 0.3s;
+}
+
+input:focus, textarea:focus, select:focus { /* <-- Y AQUÍ */
+ border: 1.5px solid #bfa14a;
+  outline: none;
+}
+
+/* --- Centrado Forzado de la Sección Principal --- */
+.venta-boletos {
+    /* Define un ancho máximo para la sección */
+    max-width: 900px;
+    /* Centra la sección horizontalmente */
+    margin: 40px auto; 
+    /* ¡Alinea el texto (títulos, etc.) dentro de la sección! */
+    text-align: center;
+    padding: 0 15px; 
+    
+    /* Nueva regla: Usamos Flexbox para centrar elementos internos (como el formulario) */
+    display: flex;
+    flex-direction: column; /* Apila el contenido (títulos, formulario, historial) */
+    align-items: center; /* Centra horizontalmente todo el contenido flex (el formulario) */
+}
+
+/* Reglas para el formulario y las tarjetas */
+form,
+.formulario-boletos, 
+.resumen-compra,
+.resumen-card {
+    /* Anchura fija para el bloque a centrar */
+    max-width: 420px; 
+    width: 100%;
+    /* ¡Margin: auto sigue siendo necesario para asegurar que la anchura limitada funcione! */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+    box-sizing: border-box;
+    /* ... El resto de tu estilo de fondo/borde ... */
+}
+
+/* Asegura que los campos de entrada estén al 100% del ancho de su contenedor (420px) */
+input, textarea, select {
+    width: 100%;
+}
+/* Esto debe incluir input, textarea, Y select para tener el estilo oscuro */
+input, textarea, select { 
+ width: 100%;
+ padding: 10px 12px;
+ margin: 8px 0 0 0;
+ border: 1.5px solid #bfa14a55;
+ border-radius: 7px;
+ background: #232526; 
+ color: #fff; 
+ font-size: 1rem;
+ font-family: inherit;
+ transition: border 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+ border: 1.5px solid #bfa14a;
+ outline: none;
+}
+/* Asegura que cada campo ocupe el ancho total del formulario */
+.campo {
+    /* Ocupa el 100% del ancho del formulario (420px) */
+    width: 100%; 
+    /* Asegura que el contenido interno no se desborde */
+    box-sizing: border-box; 
+    /* El texto y la entrada deben estar alineados a la izquierda para una buena lectura */
+    text-align: left; 
+}
+
+/* Estilo de los campos de entrada (input, select) */
+input, textarea, select {
+ /* Usar padding en el box-model para que 100% de ancho funcione correctamente */
+ box-sizing: border-box; 
+ width: 100%;
+ padding: 10px 12px;
+ /* EL MARGIN DEBE SER CERO EN LOS LADOS para no empujar el campo */
+ margin: 8px 0 0 0; 
+ 
+ border: 1.5px solid #bfa14a55;
+ border-radius: 7px;
+ background: #232526;
+ color: #fff;
+ font-size: 1rem;
+ font-family: inherit;
+ transition: border 0.3s;
+}
+ 
+/* Botón de menú hamburguesa */
+#menu-toggle {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: none; 
+  margin: 0.5em auto;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    text-align: center;
+    background-color: #222;
+    padding: 1em 0;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75em;
+    color: white;
+    background-color: #444;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+}
+

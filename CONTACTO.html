@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+
+<header>
+    <a class="Teatro" href="index.html"><h1 class="Teatro">Teatro Nacional</h1></a>  
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ACERCA DE.html">Acerca de</a></li>
+            <li><a href="CONTACTO.html">Contacto</a></li>
+            <li><a href="ventaBoletos.html">Venta de Boletos</a></li>
+            <li><a href="Programadores.html">Creadores</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1 class="tituloo">Contacto</h1>
+
+<div class="contact-container">
+    <form id="form-contacto" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required><br>
+        <label>Correo:</label>
+        <input type="email" name="correo" required><br>
+        <label>Mensaje:</label>
+        <textarea name="mensaje" required></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="respuesta"></p>
+
+    <div class="map-container">
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <a href="https://www.cultura.gob.sv/marco-institucional/direccion-nacional-de-artes/teatro-nacional-de-san-salvador/">Teatro Nacional Pagina Oficial</a> © 2025 by <a href="">Proyecto DAW </a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+</footer>
+
+<!-- Vinculamos el JS externo -->
+<script src="js/valid_formulario.js"></script>
+
+<!-- Script para el mapa (es de un servicio externo) -->
+<script>
+(function () {
+    var setting = {
+        "query": "Teatro Nacional de San Salvador, 2a Avenida Sur, San Salvador, El Salvador",
+        "width": 600,
+        "height": 400,
+        "satellite": true,
+        "zoom": 12,
+        "placeId": "ChIJwygr9ukwY48RSZakc--tC1Y",
+        "cid": "0x560badef73a49649",
+        "coords": [13.6986644, -89.19039889999999],
+        "cityUrl": "/el-salvador/san-salvador-5390",
+        "cityAnchorText": "Map of San Salvador, San Salvador Department, El Salvador",
+        "lang": "es-es",
+        "queryString": "Teatro Nacional de San Salvador, 2a Avenida Sur, San Salvador, El Salvador",
+        "centerCoord": [13.6986644, -89.19039889999999],
+        "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+        "embed_id": "1204253"
+    };
+    var d = document;
+    var s = d.createElement('script');
+    s.src = 'https://1map.com/js/script-for-user.js?embed_id=1204253';
+    s.async = true;
+    s.onload = function () {
+        window.OneMap.initMap(setting);
+    };
+    var to = d.getElementsByTagName('script')[0];
+    to.parentNode.insertBefore(s, to);
+})();
+</script>
+
+</body>
+</html>
+
