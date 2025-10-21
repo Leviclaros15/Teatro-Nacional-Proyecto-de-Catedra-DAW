@@ -46,7 +46,6 @@ const FormularioCompra = () => {
     const [isLoading, setIsLoading] = React.useState(false);
     const [confirmation, setConfirmation] = React.useState(null);
 
-    // Lógica para calcular precios (copiada y adaptada de tu JS original)
     const calcularPrecios = () => {
         let precioUnitario = 0;
         switch (selectedTipo.toLowerCase()) {
@@ -258,3 +257,4 @@ const container = document.getElementById('react-compra-root');
 const root = ReactDOM.createRoot(container);
 
 root.render(<FormularioCompra />);
+
